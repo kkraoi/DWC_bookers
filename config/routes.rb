@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  def method_name(args)
+    # code here
+  end
+
+  テスt
+
+  get 'homes/top'
   get 'books/index'
   get 'books/show'
   get 'books/new'
