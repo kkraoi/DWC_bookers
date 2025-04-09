@@ -5,11 +5,11 @@ class BooksController < ApplicationController
 
     # 新規投稿機能
     @book = Book.new
-
   end
 
 
   def show
+    @book = Book.find(params[:id])
   end
 
   def edit
