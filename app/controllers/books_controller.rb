@@ -24,6 +24,7 @@ class BooksController < ApplicationController
       redirect_to book_path(@book.id)
     else
       flash.now[:alert] = "Book was unsuccessfully created."
+      @books = Book.all
       render :index
     end
   end
@@ -41,7 +42,7 @@ class BooksController < ApplicationController
 
     # @books = Book.all
     # render :index
-    
+
     redirect_to books_path
   end
 

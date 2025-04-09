@@ -38,11 +38,30 @@ input[type="submit"] {
 }
 
 /* フラッシュメッセージ */
+.flash-message {
+  margin-bottom: 20px;
+}
 .flash-message.notice {
   color: green;
 }
 .flash-message.alert {
   color: red;
+}
+
+/* エラーボックス */
+.error-box {
+  border: 2px solid red;
+  background: #f0f0f0;
+  margin-bottom: 20px;
+}
+.error-box-head {
+  background: red;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+.error-box ul{
+  margin: 33px;
 }
 
 /* トップページ */
@@ -73,6 +92,20 @@ input[type="submit"] {
 
 .books-form-chunk + .books-form-chunk{
   margin-top: 10px;
+}
+.books-form-chunk label {
+  display: block;
+}
+
+.books-form-chunk .field_with_errors label {
+  background: red;
+  color: white;
+  display: inline-block;
+  padding: 0 5px;
+}
+.books-form-chunk .field_with_errors input, 
+.books-form-chunk .field_with_errors textarea {
+  border: 2px solid red;
 }
 
 .books-show-detail {
