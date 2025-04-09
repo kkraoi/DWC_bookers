@@ -13,3 +13,63 @@
  *= require_tree .
  *= require_self
  */
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+input[type="submit"] {
+  padding: 0px 6px;
+}
+
+.links {
+  margin-top: 10px;
+}
+
+/* トップページ */
+.top-inner{
+  margin: 33px;
+}
+
+.top-inner > p + p{
+  margin-top: 33px;
+}
+
+/* Booksページ系 */
+.books-title{
+  margin-bottom: 10px;
+}
+.books-title-1{
+  margin-bottom: 10px;
+}
+
+.books-table th,
+.books-table td{
+  padding: 7px 5px;
+}
+
+.books-sec {
+  margin-top: 30px;
+}
+
+.books-form-chunk + .books-form-chunk{
+  margin-top: 10px;
+}
+
+.books-show-detail {
+  margin: 33px;
+}
+.books-show-detail > * + *{
+  margin-top: 20px;
+}

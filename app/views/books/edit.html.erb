@@ -1,18 +1,24 @@
-<h1>Editing Book</h1>
+<h1 class="books-title">Editing Book</h1>
 
 <%= form_with(model: @book, url: book_path(@book.id), method: :patch) do |f| %>
-  <p>Title</p>
-  <%= f.text_field :title %>
+  
+  <div class="books-form-chunk">
+    <p>Title</p>
+    <%= f.text_field :title %>
+  </div>
 
-  <p>Body</p>
-  <%= f.text_area :body %>
+  <div class="books-form-chunk">
+    <p>Body</p>
+    <%= f.text_area :body %>
+  </div>
 
-  <div>
+  <div class="books-form-chunk">
     <%= f.submit "Update Book" %>
   </div>
+
 <% end %>
 
-<p class="edit-links">
+<p class="links">
   <%= link_to "Show", book_path(@book.id) %>
   |
   <%= link_to "Back", books_path %>
