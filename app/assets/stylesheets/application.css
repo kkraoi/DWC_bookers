@@ -37,6 +37,14 @@ input[type="submit"] {
   margin-top: 10px;
 }
 
+/* フラッシュメッセージ */
+.flash-message.notice {
+  color: green;
+}
+.flash-message.alert {
+  color: red;
+}
+
 /* トップページ */
 .top-inner{
   margin: 33px;
